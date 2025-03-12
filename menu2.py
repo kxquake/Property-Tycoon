@@ -1,5 +1,8 @@
 import pygame
 from main import main_game_loop
+from tokens import Token, get_default_tokens
+from player import Player  
+
 
 from tokens import get_default_tokens, Token
 
@@ -108,7 +111,8 @@ def load_menu():
     popup = None
     selected_players = 0
     total_players = 0
-    player_tokens = []  # stores chosen token 
+    player_tokens = []  # stores chosen token colors
+    players = []  # stores Player objects
 
     running = True
     while running:
@@ -125,6 +129,7 @@ def load_menu():
                         total_players = button.number
                         selected_players = 0
                         player_tokens = []
+                        players = []
                         # Reset available tokens each time you pick a new player count,
                         # if you want to allow them to re-select from the full set.
                         available_tokens = get_default_tokens()
@@ -140,7 +145,7 @@ def load_menu():
                 if play_button.is_clicked(mouse_pos):
                     print("Play button clicked")
                     running = False
-                    main_game_loop()
+                    main_game_loop(players)  # Pass the list of players to the main game
 
                 # Popup close button
                 if show_popup and popup.is_close_clicked(mouse_pos):
@@ -148,8 +153,10 @@ def load_menu():
 
                 # Handle token picking
                 if show_popup:
-                    chosen_color = popup.is_token_clicked(mouse_pos)
-                    if chosen_color:
+                    chosen_color = popup.is_token_clicked(mouse_pos)  # Assign a value to chosen_color
+                    if chosen_color:  # Check if chosen_color has a valid value
+                        player = Player(chosen_color)
+                        players.append(player)
                         player_tokens.append(chosen_color)
                         selected_players += 1
 
@@ -161,7 +168,6 @@ def load_menu():
                                 available_tokens
                             )
                         else:
-                            
                             print("All players have chosen their tokens:")
                             for i, color in enumerate(player_tokens):
                                 print(f"Player {i + 1}: {color}")

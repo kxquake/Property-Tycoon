@@ -2,7 +2,7 @@ import pygame
 from dice import DiceButton, rolldice, draw_dice
 from board import load_board, position_coordinates
 
-def main_game_loop():
+def main_game_loop(players):
     pygame.init()
 
     # Set up display
@@ -24,17 +24,27 @@ def main_game_loop():
     dice1_position = (510, 207) 
     dice2_position = (649, 207) 
 
+    current_player_index = 0  # Start with Player 1
+
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
-                # Check if the click is within the "Roll" button's rectangle
                 if dice_button.is_clicked(pygame.mouse.get_pos()):
-                    a, b = rolldice()  
-                    current_number1 = a 
-                    current_number2 = b  
-                    print(f"Total Dice Roll: {a + b}")  # Debugging output
+                    a, b = rolldice()
+                    current_number1 = a
+                    current_number2 = b
+                    total = a + b
+
+                    # Move the current player
+                    current_player = players[current_player_index]
+                    current_player.position = (current_player.position + total - 1) % 40 + 1
+
+                    # Switch to the next player
+                    current_player_index = (current_player_index + 1) % len(players)
+
+                    print(f"Player {current_player_index + 1} moved to position {current_player.position}")
 
         # Draw the scaled board
         screen.blit(board_image, (0, 0))
@@ -44,6 +54,12 @@ def main_game_loop():
 
         # Draw dice 2
         draw_dice(screen, current_number2, dice2_position)
+
+        # Draw player tokens
+        for player in players:
+            x, y = position_coordinates[player.position]
+            pygame.draw.circle(screen, player.token_color, (x, y), 10)  
+
 
         pygame.display.flip()
 
