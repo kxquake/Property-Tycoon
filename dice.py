@@ -14,6 +14,9 @@ def rolldice():
     print(f"Dice Roll: {a}, {b}")  # Debugging output
     return a, b
 
+def check_if_double(a,b):
+    return a == b
+
 def draw_dice(screen, number, position):
     dice_size = 75  # Adjust size as needed
     dot_color = (0, 0, 0)  # Black
@@ -51,3 +54,5 @@ def draw_dice(screen, number, position):
         pygame.draw.circle(screen, dot_color, (center[0] + 15, center[1]), radius)
         pygame.draw.circle(screen, dot_color, (center[0] - 15, center[1] + 15), radius)
         pygame.draw.circle(screen, dot_color, (center[0] + 15, center[1] + 15), radius)
+
+    
