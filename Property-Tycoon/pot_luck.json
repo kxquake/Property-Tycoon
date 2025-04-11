@@ -1,0 +1,20 @@
+[
+    {"text": "You inherit £200", "action": "add_money", "amount": 200},
+    {"text": "You have won 2nd prize in a beauty contest, collect £50", "action": "add_money", "amount": 50},
+    {"text": "Advance to GO", "action": "move_to", "position": 1},
+    {"text": "Go to jail. Do not pass GO, do not collect £200", "action": "go_to_jail"},
+    {"text": "Go back to The Old Creek", "action": "move_to", "position": 2},
+    {"text": "Student loan refund. Collect £20", "action": "add_money", "amount": 20},
+    {"text": "Bank error in your favour. Collect £200", "action": "add_money", "amount": 200},
+    {"text": "Pay bill for text books of £100", "action": "pay", "amount": 100},
+    {"text": "Mega late night taxi bill pay £50", "action": "pay", "amount": 50},
+    {"text": "From sale of Bitcoin you get £50", "action": "add_money", "amount": 50},
+    {"text": "Bitcoin assets fall – pay off bitcoin short fall", "action": "pay", "amount": 100},
+    {"text": "Pay a £10 fine or take opportunity knocks", "action": "choice_fine_or_card", "amount": 10},
+    {"text": "Pay insurance fee of £50", "action": "pay", "amount": 50},
+    {"text": "Savings bond matured, collect £100", "action": "add_money", "amount": 100},
+    {"text": "Received interest on shares of £25", "action": "add_money", "amount": 25},
+    {"text": "It's your birthday. Collect £10 from each player", "action": "collect_from_each_player", "amount": 10},
+    {"text": "Get out of jail free", "action": "get_out_of_jail_free"}
+  ]
+  
