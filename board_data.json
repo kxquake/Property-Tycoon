@@ -1,0 +1,526 @@
+{
+    "board": [
+      {
+        "position": 1,
+        "name": "Go",
+        "group": "",
+        "action": "Collect £200",
+        "can_be_bought": false
+      },
+      {
+        "position": 2,
+        "name": "The Old Creek",
+        "group": "Brown",
+        "can_be_bought": true,
+        "cost": 60,
+        "rent": {
+          "unimproved": 2,
+          "1_house": 10,
+          "2_houses": 30,
+          "3_houses": 90,
+          "4_houses": 160,
+          "1_hotel": 250
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 3,
+        "name": "Pot Luck",
+        "group": "",
+        "action": "Take card",
+        "can_be_bought": false
+      },
+      {
+        "position": 4,
+        "name": "Gangsters Paradise",
+        "group": "Brown",
+        "can_be_bought": true,
+        "cost": 60,
+        "rent": {
+          "unimproved": 4,
+          "1_house": 20,
+          "2_houses": 60,
+          "3_houses": 180,
+          "4_houses": 320,
+          "1_hotel": 450
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 5,
+        "name": "Income Tax",
+        "group": "",
+        "action": "Pay £200",
+        "can_be_bought": false
+      },
+      {
+        "position": 6,
+        "name": "Brighton Station",
+        "group": "Station",
+        "can_be_bought": true,
+        "cost": 200,
+        "rent": "See notes",
+        "player":"Bank"
+      },
+      {
+        "position": 7,
+        "name": "The Angels Delight",
+        "group": "Blue",
+        "can_be_bought": true,
+        "cost": 100,
+        "rent": {
+          "unimproved": 6,
+          "1_house": 30,
+          "2_houses": 90,
+          "3_houses": 270,
+          "4_houses": 400,
+          "1_hotel": 550
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 8,
+        "name": "Opportunity Knocks",
+        "group": "",
+        "action": "Take card",
+        "can_be_bought": false
+      },
+      {
+        "position": 9,
+        "name": "Potter Avenue",
+        "group": "Blue",
+        "can_be_bought": true,
+        "cost": 100,
+        "rent": {
+          "unimproved": 6,
+          "1_house": 30,
+          "2_houses": 90,
+          "3_houses": 270,
+          "4_houses": 400,
+          "1_hotel": 550
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 10,
+        "name": "Granger Drive",
+        "group": "Blue",
+        "can_be_bought": true,
+        "cost": 120,
+        "rent": {
+          "unimproved": 8,
+          "1_house": 40,
+          "2_houses": 100,
+          "3_houses": 300,
+          "4_houses": 450,
+          "1_hotel": 600
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 11,
+        "name": "Jail/Just visiting",
+        "group": "",
+        "can_be_bought": false
+      },
+      {
+        "position": 12,
+        "name": "Skywalker Drive",
+        "group": "Purple",
+        "can_be_bought": true,
+        "cost": 140,
+        "rent": {
+          "unimproved": 10,
+          "1_house": 50,
+          "2_houses": 150,
+          "3_houses": 450,
+          "4_houses": 625,
+          "1_hotel": 750
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 13,
+        "name": "Tesla Power Co",
+        "group": "Utilities",
+        "can_be_bought": true,
+        "cost": 150,
+        "rent": "See notes",
+        "player":"Bank"
+      },
+      {
+        "position": 14,
+        "name": "Wookie Hole",
+        "group": "Purple",
+        "can_be_bought": true,
+        "cost": 140,
+        "rent": {
+          "unimproved": 10,
+          "1_house": 50,
+          "2_houses": 150,
+          "3_houses": 450,
+          "4_houses": 625,
+          "1_hotel": 750
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 15,
+        "name": "Rey Lane",
+        "group": "Purple",
+        "can_be_bought": true,
+        "cost": 160,
+        "rent": {
+          "unimproved": 12,
+          "1_house": 60,
+          "2_houses": 180,
+          "3_houses": 500,
+          "4_houses": 700,
+          "1_hotel": 900
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 16,
+        "name": "Hove Station",
+        "group": "Station",
+        "can_be_bought": true,
+        "cost": 200,
+        "rent": "See notes",
+        "player":"Bank"
+      },
+      {
+        "position": 17,
+        "name": "Bishop Drive",
+        "group": "Orange",
+        "can_be_bought": true,
+        "cost": 180,
+        "rent": {
+          "unimproved": 14,
+          "1_house": 70,
+          "2_houses": 200,
+          "3_houses": 550,
+          "4_houses": 750,
+          "1_hotel": 950
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 18,
+        "name": "Pot Luck",
+        "group": "",
+        "action": "Take card",
+        "can_be_bought": false
+      },
+      {
+        "position": 19,
+        "name": "Dunham Street",
+        "group": "Orange",
+        "can_be_bought": true,
+        "cost": 180,
+        "rent": {
+          "unimproved": 14,
+          "1_house": 70,
+          "2_houses": 200,
+          "3_houses": 550,
+          "4_houses": 750,
+          "1_hotel": 950
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 20,
+        "name": "Broyles Lane",
+        "group": "Orange",
+        "can_be_bought": true,
+        "cost": 200,
+        "rent": {
+          "unimproved": 16,
+          "1_house": 80,
+          "2_houses": 220,
+          "3_houses": 600,
+          "4_houses": 800,
+          "1_hotel": 1000
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 21,
+        "name": "Free Parking",
+        "group": "",
+        "action": "Collect fines",
+        "can_be_bought": false
+      },
+      {
+        "position": 22,
+        "name": "Yue Fei Square",
+        "group": "Red",
+        "can_be_bought": true,
+        "cost": 220,
+        "rent": {
+          "unimproved": 18,
+          "1_house": 90,
+          "2_houses": 250,
+          "3_houses": 700,
+          "4_houses": 875,
+          "1_hotel": 1050
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 23,
+        "name": "Opportunity Knocks",
+        "group": "",
+        "action": "Take card",
+        "can_be_bought": false
+      },
+      {
+        "position": 24,
+        "name": "Mulan Rouge",
+        "group": "Red",
+        "can_be_bought": true,
+        "cost": 220,
+        "rent": {
+          "unimproved": 18,
+          "1_house": 90,
+          "2_houses": 250,
+          "3_houses": 700,
+          "4_houses": 875,
+          "1_hotel": 1050
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 25,
+        "name": "Han Xin Gardens",
+        "group": "Red",
+        "can_be_bought": true,
+        "cost": 240,
+        "rent": {
+          "unimproved": 20,
+          "1_house": 100,
+          "2_houses": 300,
+          "3_houses": 750,
+          "4_houses": 925,
+          "1_hotel": 1100
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 26,
+        "name": "Falmer Station",
+        "group": "Station",
+        "can_be_bought": true,
+        "cost": 200,
+        "rent": "See notes",
+        "player":"Bank"
+      },
+      {
+        "position": 27,
+        "name": "Shatner Close",
+        "group": "Yellow",
+        "can_be_bought": true,
+        "cost": 260,
+        "rent": {
+          "unimproved": 22,
+          "1_house": 110,
+          "2_houses": 330,
+          "3_houses": 800,
+          "4_houses": 975,
+          "1_hotel": 1150
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 28,
+        "name": "Picard Avenue",
+        "group": "Yellow",
+        "can_be_bought": true,
+        "cost": 260,
+        "rent": {
+          "unimproved": 22,
+          "1_house": 110,
+          "2_houses": 330,
+          "3_houses": 800,
+          "4_houses": 975,
+          "1_hotel": 1150
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 29,
+        "name": "Edison Water",
+        "group": "Utilities",
+        "can_be_bought": true,
+        "cost": 150,
+        "rent": "See notes",
+        "player":"Bank"
+      },
+      {
+        "position": 30,
+        "name": "Crusher Creek",
+        "group": "Yellow",
+        "can_be_bought": true,
+        "cost": 280,
+        "rent": {
+          "unimproved": 22,
+          "1_house": 120,
+          "2_houses": 360,
+          "3_houses": 850,
+          "4_houses": 1025,
+          "1_hotel": 1200
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 31,
+        "name": "Go to Jail",
+        "group": "Go to jail",
+        "can_be_bought": false
+      },
+      {
+        "position": 32,
+        "name": "Sirat Mews",
+        "group": "Green",
+        "can_be_bought": true,
+        "cost": 300,
+        "rent": {
+          "unimproved": 26,
+          "1_house": 130,
+          "2_houses": 390,
+          "3_houses": 900,
+          "4_houses": 1100,
+          "1_hotel": 1275
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 33,
+        "name": "Ghengis Crescent",
+        "group": "Green",
+        "can_be_bought": true,
+        "cost": 300,
+        "rent": {
+          "unimproved": 26,
+          "1_house": 130,
+          "2_houses": 390,
+          "3_houses": 900,
+          "4_houses": 1100,
+          "1_hotel": 1275
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 34,
+        "name": "Pot Luck",
+        "group": "",
+        "action": "Take card",
+        "can_be_bought": false
+      },
+      {
+        "position": 35,
+        "name": "Ibis Close",
+        "group": "Green",
+        "can_be_bought": true,
+        "cost": 320,
+        "rent": {
+          "unimproved": 28,
+          "1_house": 150,
+          "2_houses": 450,
+          "3_houses": 1000,
+          "4_houses": 1200,
+          "1_hotel": 1400
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 36,
+        "name": "Portslade Station",
+        "group": "Station",
+        "can_be_bought": true,
+        "cost": 200,
+        "rent": "See notes",
+        "player":"Bank"
+      },
+      {
+        "position": 37,
+        "name": "Opportunity Knocks",
+        "group": "",
+        "action": "Take card",
+        "can_be_bought": false
+      },
+      {
+        "position": 38,
+        "name": "James Webb Way",
+        "group": "Deep blue",
+        "can_be_bought": true,
+        "cost": 350,
+        "rent": {
+          "unimproved": 35,
+          "1_house": 175,
+          "2_houses": 500,
+          "3_houses": 1100,
+          "4_houses": 1300,
+          "1_hotel": 1500
+        },
+        "player":"Bank"
+      },
+      {
+        "position": 39,
+        "name": "Super Tax",
+        "group": "",
+        "action": "Pay £100",
+        "can_be_bought": false
+      },
+      {
+        "position": 40,
+        "name": "Turing Heights",
+        "group": "Deep blue",
+        "can_be_bought": true,
+        "cost": 400,
+        "rent": {
+          "unimproved": 50,
+          "1_house": 200,
+          "2_houses": 600,
+          "3_houses": 1400,
+          "4_houses": 1700,
+          "1_hotel": 2000
+        },
+        "player":"Bank"
+      }
+    ],
+    "notes": {
+      "utilities": {
+        "one_owned": "Rent is 4 times value shown on dice.",
+        "both_owned": "Rent is 10 times value shown on dice."
+      },
+      "stations": {
+        "one_owned": "Rent is £25.",
+        "two_owned": "Rent is £50.",
+        "three_owned": "Rent is £100.",
+        "four_owned": "Rent is £200."
+      },
+      "house_and_hotel_costs": {
+        "brown_blue": {
+          "house": 50,
+          "hotel": "£50 + 4 houses"
+        },
+        "purple_orange": {
+          "house": 100,
+          "hotel": "£100 + 4 houses"
+        },
+        "red_yellow": {
+          "house": 150,
+          "hotel": "£150 + 4 houses"
+        },
+        "green_deep_blue": {
+          "house": 200,
+          "hotel": "£200 + 4 houses"
+        }
+      },
+      "taxes": {
+        "income_tax": "Pay £200 to the bank.",
+        "super_tax": "Pay £100 to the bank."
+      }
+    }
+  }
