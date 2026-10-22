@@ -1,4 +1,4 @@
-# Property Tycoon
+# Property Tycoon — Python Board Game
 
 A local, turn-based property-trading board game built with Python and Pygame.
 Choose one to five human players and their tokens; an additional computer player
