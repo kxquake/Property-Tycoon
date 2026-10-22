@@ -51,8 +51,6 @@ pressing Play. How To Play explains the original rules and controls.
 
 - [Architecture and module map](docs/ARCHITECTURE.md)
 - [Fixes and remaining limitations](docs/KNOWN-ISSUES.md)
-- [Every code change](docs/CHANGES.md)
-- [Packaging changes and verification](docs/PACKAGING.md)
 
 This version contains targeted crash, purchase-validation and launch fixes, not a
 gameplay/UI redesign. All three JSON files and 19 PNG assets retain their original
